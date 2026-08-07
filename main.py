@@ -20,7 +20,7 @@ async def on_ready():
 
 
 @bot.command()
-    async def hello(ctx):
+async def hello(ctx):
         await ctx.send("Vítej v Antirōsu.")
 
         print("Připojují se na Discord...")

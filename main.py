@@ -7,6 +7,7 @@ TOKEN = os.getenv("DISCORD_TOKEN")
 
 intents = discord.Intents.default()
 intents.message_content = True
+intents.members = True
 
 bot = commands.Bot(
         command_prefix="!",
@@ -17,7 +18,24 @@ bot = commands.Bot(
 @bot.event
 async def on_ready():
     print(f"Antirōs bot je přihlášen jako {bot.user}")
-
+        
+@bot.event
+async def one_member_join():
+        channel =
+bot.get_channel(https://discord.com/channels/1533279934435561634/1534186393067196476)
+  
+    if channel:
+        await channel.send(
+            f"🌙 Vítej v Antirōsu, {member.mention}!\n\n"
+            "Nový poutník dorazil do našeho světa.\n\n"
+            "Než se vydáš dál, navštiv tato místa:\n\n"
+            "📜 Pravidla → <#1534189201774350336>\n"
+            "🎭 Role → <#1534623271721504858>\n"
+            "🧭 Kvíz → <#1535375026642100286>\n"
+            "📢 Oznámení → <#1534189282854437025>\n"
+            "📖 O Antirōsu → <#1534189402132189304>\n\n"
+            "✨ Tvá cesta začíná právě teď."
+        )
 
 @bot.command()
 async def start(ctx):

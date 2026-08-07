@@ -21,9 +21,14 @@ async def on_ready():
 
 @bot.command()
 async def hello(ctx):
-        await ctx.send("Vítej v Antirōsu.")
+        await ctx.send(f"🌙 Vítej v Antirōsu,{ctx.author.mention}!\n\n"
+                      "Než se vydáš dál,projdi si tyhle důležité části severu:\n\n"
+                      "📜 <#ID_rules>\n"
+                      "📖 <#ID_informations>\n"
+                      "🧭 <#ID_quiz>\n"
+                      "Až budeš připraven/a, začni v <#ID_quiz>."
+                      )
 
-            
 if not TOKEN:
     raise RuntimeError("Chybí DISCORD_TOKEN.")
 

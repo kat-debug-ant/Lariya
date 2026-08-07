@@ -3,6 +3,7 @@ import discord
 from discord.ext import commands
 
 TOKEN = os.getenv("DISCORD_TOKEN")
+print("Token nalezen:", TOKEN is not None)
 
 intents = discord.Intents.default()
 intents.message_content = True

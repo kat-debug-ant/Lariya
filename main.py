@@ -27,4 +27,3 @@ async def on_ready():
             raise RuntimeError("Chybí DISCORD_TOKEN.")
 
             bot.run(TOKEN)
-)

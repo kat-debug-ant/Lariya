@@ -20,14 +20,18 @@ async def on_ready():
 
 
 @bot.command()
-async def hello(ctx):
-        await ctx.send(f"🌙 Vítej v Antirōsu,{ctx.author.mention}!\n\n"
-                      "Než se vydáš dál,projdi si tyhle důležité části severu:\n\n"
-                      "📜 <#ID_rules>\n"
-                      "📖 <#ID_informations>\n"
-                      "🧭 <#ID_quiz>\n"
-                      "Až budeš připraven/a, začni v <#ID_quiz>."
-                      )
+async def start(ctx):
+    await ctx.send(
+        f"🌙 Vítej v Antirōsu, {ctx.author.mention}!\n\n"
+        "Před tebou se otevírá nový svět plný příběhů, tajemství a objevů.\n\n"
+        "Než se vydáš dál, doporučuji navštívit tato místa:\n\n"
+        "📜 Pravidla → <#1534189201774350336>\n"
+        "🎭 Role → <#1534623271721504858>\n"
+        "🧭 Kvíz → <#1535375026642100286>\n"
+        "📢 Oznámení → <#1534189282854437025>\n"
+        "📖 O Antirōsu → <#1534189402132189304>\n\n"
+        "✨ Až budeš připravený, začni svou cestu."
+    )
 
 if not TOKEN:
     raise RuntimeError("Chybí DISCORD_TOKEN.")

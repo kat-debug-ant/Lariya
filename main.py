@@ -24,7 +24,7 @@ async def on_member_join(member):
     channel = bot.get_channel(1534186393067196476)
 
     if channel:
-        embed = Embed(
+        embed = discord.Embed(
             title="🌙 Vítej v Antirōsu",
             description=(
                 f"Vítej, {member.mention}!\n\n"
@@ -82,20 +82,6 @@ async def on_member_join(member):
             "📖 O Antirōsu → <#1534189402132189304>\n\n"
             "✨ Tvá cesta začíná právě teď."
         )
-
-@bot.command()
-async def start(ctx):
-    await ctx.send(
-        f"🌙 Vítej v Antirōsu, {ctx.author.mention}!\n\n"
-        "Před tebou se otevírá nový svět plný příběhů, tajemství a objevů.\n\n"
-        "Než se vydáš dál, doporučuji navštívit tato místa:\n\n"
-        "📜 Pravidla → <#1534189201774350336>\n"
-        "🎭 Role → <#1534623271721504858>\n"
-        "🧭 Kvíz → <#1535375026642100286>\n"
-        "📢 Oznámení → <#1534189282854437025>\n"
-        "📖 O Antirōsu → <#1534189402132189304>\n\n"
-        "✨ Až budeš připravený, začni svou cestu."
-    )
 
 if not TOKEN:
     raise RuntimeError("Chybí DISCORD_TOKEN.")

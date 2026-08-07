@@ -28,4 +28,5 @@ async def on_ready():
         if not TOKEN:
             raise RuntimeError("Chybí DISCORD_TOKEN.")
 
+            print("Spouštím bot.run...")
             bot.run(TOKEN)

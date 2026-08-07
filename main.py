@@ -19,7 +19,7 @@ async def on_ready():
     print(f"Antirōs bot je přihlášen jako {bot.user}")
 
 
-    @bot.command()
+@bot.command()
     async def hello(ctx):
         await ctx.send("Vítej v Antirōsu.")
 

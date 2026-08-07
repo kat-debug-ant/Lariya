@@ -70,19 +70,6 @@ async def on_member_join(member):
 
         await channel.send(embed=embed)
 
-    if channel:
-        await channel.send(
-            f"🌙 Vítej v Antirōsu, {member.mention}!\n\n"
-            "Nový poutník dorazil do našeho světa.\n\n"
-            "Než se vydáš dál, navštiv tato místa:\n\n"
-            "📜 Pravidla → <#1534189201774350336>\n"
-            "🎭 Role → <#1534623271721504858>\n"
-            "🧭 Kvíz → <#1535375026642100286>\n"
-            "📢 Oznámení → <#1534189282854437025>\n"
-            "📖 O Antirōsu → <#1534189402132189304>\n\n"
-            "✨ Tvá cesta začíná právě teď."
-        )
-
 if not TOKEN:
     raise RuntimeError("Chybí DISCORD_TOKEN.")
 

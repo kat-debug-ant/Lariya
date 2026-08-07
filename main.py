@@ -26,4 +26,5 @@ async def on_ready():
         if not TOKEN:
             raise RuntimeError("Chybí DISCORD_TOKEN.")
 
-            print("Připojují se na Discord...")bot.run(TOKEN)
+            print("Připojují se na Discord...")
+            bot.run(TOKEN)

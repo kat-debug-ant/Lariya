@@ -24,7 +24,7 @@ async def one_member_join():
         channel = bot.get_channel(1533279934435561634/1534186393067196476)
   
 if channel:
-        await channel.send(
+await channel.send(
             f"🌙 Vítej v Antirōsu, {member.mention}!\n\n"
             "Nový poutník dorazil do našeho světa.\n\n"
             "Než se vydáš dál, navštiv tato místa:\n\n"

@@ -13,7 +13,7 @@ bot = commands.Bot(
             intents=intents
 )
 print("Bot se spouští...")
-
+print(Dosel jsem za botspousteni")
 @bot.event
 async def on_ready():
     print(f"Antirōs bot je přihlášen jako {bot.user}")

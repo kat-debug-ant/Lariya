@@ -13,7 +13,7 @@ bot = commands.Bot(
             intents=intents
 )
 print("Bot se spouští...")
-print(Dosel jsem za bot spousteni")
+print("Dosel jsem za bot spousteni")
 
 @bot.event
 async def on_ready():

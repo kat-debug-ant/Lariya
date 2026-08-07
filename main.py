@@ -11,7 +11,7 @@ bot = commands.Bot(
         command_prefix="!",
             intents=intents
 )
-
+print("Bot se spouští...")
 
 @bot.event
 async def on_ready():
@@ -26,4 +26,4 @@ async def on_ready():
         if not TOKEN:
             raise RuntimeError("Chybí DISCORD_TOKEN.")
 
-            bot.run(TOKEN)
+            print("Připojují se na Discord...")bot.run(TOKEN)

@@ -25,12 +25,12 @@ print("Eventy načtené")
 async def hello(ctx):
         await ctx.send("Vítej v Antirōsu.")
 
-        print("Příkaz načtený")
+print("Příkaz načtený")
 
-        print("Připojují se na Discord...")
+print("Připojují se na Discord...")
             
-        if not TOKEN:
-            raise RuntimeError("Chybí DISCORD_TOKEN.")
+if not TOKEN:
+    raise RuntimeError("Chybí DISCORD_TOKEN.")
 
-            print("Spouštím bot.run...")
+print("Spouštím bot.run...")
             bot.run(TOKEN)

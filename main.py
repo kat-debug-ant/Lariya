@@ -23,9 +23,9 @@ async def on_ready():
     async def hello(ctx):
         await ctx.send("Vítej v Antirōsu.")
 
-
+        print("Připojují se na Discord...")
+            
         if not TOKEN:
             raise RuntimeError("Chybí DISCORD_TOKEN.")
 
-            print("Připojují se na Discord...")
             bot.run(TOKEN)

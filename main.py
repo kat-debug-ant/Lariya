@@ -21,7 +21,6 @@ async def on_ready():
 
 @bot.command()
 async def hello(ctx):
-        print("Přišel příkaz hello")
         await ctx.send("Vítej v Antirōsu.")
 
             

@@ -19,10 +19,13 @@ print("Dosel jsem za bot spousteni")
 async def on_ready():
     print(f"Antirōs bot je přihlášen jako {bot.user}")
 
+print("Eventy načtené")
 
 @bot.command()
 async def hello(ctx):
         await ctx.send("Vítej v Antirōsu.")
+
+        print("Příkaz načtený")
 
         print("Připojují se na Discord...")
             

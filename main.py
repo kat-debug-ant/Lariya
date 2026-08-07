@@ -21,7 +21,7 @@ async def on_ready():
         
 @bot.event
 async def on_member_join(member):
-        channel = bot.get_channel(1533279934435561634/1534186393067196476)
+        channel = bot.get_channel(1534186393067196476)
   
 if channel:
     await channel.send(
